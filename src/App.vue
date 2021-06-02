@@ -1,10 +1,29 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <nav class="py-4 pl-16 h-18 pr-12 flex items-center justify-between bg-green-400">
+      <div class="font-extrabold text-3xl text-gray-100 tracking-wide">  
+        <router-link to="/">Home</router-link>
+      </div>
+        <div class="flex flex-row justify-end space-x-4">  
+        <button class="bg-gray-300 hover:bg-gray-400 w-24 h-10 text-gray-700 justify-center 
+          text-lg font-semibold rounded shadow-lg">
+          <router-link to="/persegi">Persegi</router-link></button>
+        <button class="bg-gray-300 hover:bg-gray-400 w-24 h-10 text-gray-700 justify-center 
+          text-lg font-semibold rounded shadow-lg tracking-tighter">
+          <router-link to="/lingkaran">Lingkaran</router-link></button>
+        <button class="bg-gray-300 hover:bg-gray-400 w-24 h-10 text-gray-700 justify-center 
+          text-lg font-semibold rounded shadow-lg">
+          <router-link to="/segitiga">Segitiga</router-link></button>
+        <button class="bg-gray-300 hover:bg-gray-400 w-24 h-10 text-gray-700 justify-center 
+          text-lg font-semibold rounded shadow-lg">
+          <router-link to="/gaji">Gaji</router-link></button>
+        <button class="bg-gray-300 hover:bg-gray-400 w-24 h-10 text-gray-700 justify-center 
+          text-lg font-semibold rounded shadow-lg">
+        <router-link to="/nilai">Nilai</router-link></button>
+        </div>
+    </nav> 
+
+    <router-view/> 
   </div>
 </template>
 
